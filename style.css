@@ -1,0 +1,152 @@
+body {
+    background: #223251;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.slider::before {
+    background: linear-gradient(0deg, #1a477a 0%, #243B55 100%);
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-size: cover;
+
+    box-shadow: 0px -20px 20px #243B55,
+        0px 10px 20px #1a2a3d,
+        0px -10px 20px #1a2a3d,
+        0px 0px 10px #349beb,
+        inset 0px 5px 6px #1a2a3d,
+        inset 0px -5px 6px #242424;
+}
+
+.knob {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slider::before,
+.knob {
+    width: 10em;
+    height: 10em;
+    position: relative;
+
+}
+
+.knob::before,
+.knob::after,
+.slider::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.knob::before {
+    top: 100px;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #349beb;
+}
+
+.knob::after {
+    content: '';
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #fff;
+    width: 120%;
+    height: 120%;
+    box-shadow: 0px 0px 10px #349beb;
+    inset: 0px 0px 10px #349beb;
+}
+
+
+.inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #349beb;
+    border: 1px solid black;
+    border-radius: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-circle:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(130px);
+}
+
+.inner-circle:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(15deg) translateX(130px);
+}
+
+
+.inner-circle:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(30deg) translateX(130px);
+}
+
+
+.inner-circle:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(150deg) translateX(130px);
+}
+
+.inner-circle:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(165deg) translateX(130px);
+}
+
+.inner-circle:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(130px);
+}
+
+.inner-circle:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(195deg) translateX(130px);
+}
+
+.inner-circle:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(210deg) translateX(130px);
+}
+
+.inner-circle:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(225deg) translateX(130px);
+}
+
+
+.inner-circle:nth-child(10) {
+    transform: translate(-50%, -50%) rotate(240deg) translateX(130px);
+}
+
+.inner-circle:nth-child(11) {
+    transform: translate(-50%, -50%) rotate(255deg) translateX(130px);
+}
+
+.inner-circle:nth-child(12) {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(130px);
+}
+
+.inner-circle:nth-child(13) {
+    transform: translate(-50%, -50%) rotate(285deg) translateX(130px);
+}
+
+.inner-circle:nth-child(14) {
+    transform: translate(-50%, -50%) rotate(300deg) translateX(130px);
+}
+
+.inner-circle:nth-child(15) {
+    transform: translate(-50%, -50%) rotate(315deg) translateX(130px);
+}
+
+.inner-circle:nth-child(16) {
+    transform: translate(-50%, -50%) rotate(330deg) translateX(130px);
+}
+
+.inner-circle:nth-child(17) {
+    transform: translate(-50%, -50%) rotate(345deg) translateX(130px);
+}
